@@ -24,8 +24,7 @@ public class SeedData {
             Event event = new Event();
             for(int j = 0; j <  Math.round((float) (Math.random()*10)); j++){
                 float price = 1 + (float) (Math.random()*100 + 1);
-                Ticket ticket = new Ticket(price);
-                event.addTicket(ticket);
+                new Ticket(price, event);
             }
 
             //Assign Location
